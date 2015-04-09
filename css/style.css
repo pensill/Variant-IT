@@ -1,0 +1,947 @@
+
+@font-face {
+    font-family: PT_Sans;
+    src: url('../fonts/PT_Sans.ttf');
+}
+@font-face {
+    font-family: Lato_regular;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed";
+}
+div{
+	margin: 0;
+    padding: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+h1{
+	font-size: 24px;
+	font-weight: 500;
+	color: #333333;
+	margin-bottom: 15px;
+}
+h2{
+  font-size: 22px;
+  font-weight: bold;
+  color:white;
+  padding-bottom: 12px;
+}
+h3{
+	font-size: 18px;
+	font-family: "Open Sans";
+	font-weight: 200;
+	padding-top: 2px;
+    padding-bottom: 8px;
+    color: #333333;
+
+
+}
+
+body {
+	background: url("../img/bg.png") repeat;
+
+}
+
+
+/* ==========================================================================
+   1. HEADER
+   ========================================================================== */
+header{
+    margin-top: 46px;
+}
+.menu{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-color: #E7E9EE;
+    box-shadow: 1px 2px 13px 0 #4D4B4B;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    padding-bottom: 23px;
+    padding-left: 93px;
+    position: relative;
+    width: 1060px;
+    z-index: 70;
+}
+.logo{
+    margin-right: 60px;
+}
+.menu_items{
+    display: inline-block;
+}
+.menu_item{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-bottom: 19px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.menu_item:hover{
+    color: #219fd1 !important;
+    border-bottom: 2px solid #219fd1;
+    padding-bottom: 17px;
+    /*text-decoration: underline ;*/
+    /*text-decoration-color: #219fd1;*/
+}
+.menu_item i{
+    display: block;
+}
+.network{
+    margin-right: 24px;
+}
+.network i{
+    background: url("../img/sprite.png") no-repeat scroll 0 0;
+    width: 74px;
+    height: 47px;
+}
+.network a{
+    margin-left: 10px;
+}
+.wiring{
+    margin-right: 24px;
+}
+.wiring i{
+    background: url("../img/sprite.png") no-repeat scroll -90px 0;
+    width: 49px;
+    height: 48px;
+    margin-left: 26px;
+}
+.design{
+    margin-right: 20px;
+}
+.design i{
+    background: url("../img/sprite.png") no-repeat scroll -140px 0;
+    width: 64px;
+    height: 59px;
+    margin-left: 23px;
+    margin-top: 10px;
+    position: relative;
+    top:6px;
+}
+
+.appz{
+    margin-right: 26px;
+}
+.appz i{
+    background: url("../img/sprite.png") no-repeat scroll -4px -62px;
+    width: 56px;
+    height: 49px;
+    margin-left: -2px;
+}
+.appz a{
+    margin-left: 12px;
+}
+.appz p{
+    margin-left: 9px;
+}
+.vols{
+    margin-right: 25px;
+}
+.vols i{
+    background: url("../img/sprite.png") no-repeat scroll -75px -62px;
+    width: 54px;
+    height: 49px;
+}
+.vols a{
+    margin-left: 16px;
+}
+.vols p{
+    padding-left: 8px;
+}
+.construction{
+    text-align: center;
+    position: relative;
+    top: 23px;
+}
+.construction i{
+    background: url("../img/sprite.png") no-repeat scroll -143px -62px;
+    width: 64px;
+    height: 51px;
+    margin-left: 32px;
+}
+.construction:hover{
+    margin-bottom: 0px;
+    padding-bottom: 10px
+}
+.construction p{
+    width: 126px;
+}
+
+/* ==========================================================================
+   1. HEADER END
+   ========================================================================== */
+
+/* ==========================================================================
+   2. GREY LINE
+   ========================================================================== */
+
+.grey_line{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #333333;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-bottom: 11px;
+    letter-spacing: -1px;
+    position: absolute;
+    top:0;
+    z-index: 70;
+}
+.grey_line .container{
+    display: inline-block;
+    position: relative;
+    top:6px;
+}
+
+.tel_number{
+    display: inline-block;
+    color: #3fa9d3;
+    font-size: 18px;
+    padding-right: 215px;
+    text-decoration: none;
+}
+.tel_number:before{
+    content:"";
+    display: inline-block;
+    background: url("../img/sprite.png") repeat scroll 0 134px;
+    width: 27px;
+    height: 27px;
+    margin-bottom: -9px;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+.online_inquiry{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background-color: #219fd1;
+    padding: 6px 50px 7px;
+    display: inline-block;
+    margin-right: 207px;
+}
+.contact_link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    height: 27px;
+    color: #3fa9d3;
+}
+.contact_link:after{
+    content: "";
+    display: inline-block;
+    background: url("../img/sprite.png") repeat scroll -48px 134px;
+    width: 27px;
+    height: 27px;
+    margin-bottom: -9px;
+    margin-left: 6px;
+}
+/* ==========================================================================
+   2. GREY LINE END
+   ========================================================================== */
+
+
+/* ==========================================================================
+   2. CONTENT
+   ========================================================================== */
+.content_all{
+    width: 960px;
+    background-color: #ffffff;
+    margin:0 auto;
+    box-shadow: 0 3px 26px 1px #111111
+}
+
+/* ==========================================================================
+   2.1 sidebar
+   ========================================================================== */
+.sidebar{
+	display: inline-block;
+	width: 263px;
+    position: relative;
+}
+.sidebar a{
+	text-decoration: none;
+	color: #4c4957;
+	font-size: 16px; 
+	list-style-type:none;
+}
+.sidebar_block_left{
+    content: "";
+    height: 159px;
+    left: -51px;
+    position: absolute;
+    top: -89px;
+    width: 181px;
+    z-index: -40;
+}
+.sidebar_block_right{
+    content: "";
+    width:181px;
+    height:159px;
+    position: absolute;
+    top:-89px;
+    left: 830px;
+    z-index: -10;
+}
+.sidebar_block_left{
+    content: "";
+    height: 159px;
+    left: -51px;
+    position: absolute;
+    top: -89px;
+    width: 181px;
+    z-index: -40;
+}
+nav ul{
+	margin-left: 37px;
+	padding-top: 45px;
+}
+nav li{
+	font-size: 16px;
+	line-height: 40px;
+	list-style-type:none;
+}
+
+nav li i{
+	position: relative;
+	margin-right: 25px;
+}
+
+nav>ul>li:hover a{
+    color: #3ca1cd !important;
+}
+nav>ul>li:active a{
+    color: #3ca1cd !important;
+}
+.about_company i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll 0px -174px;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    top:6px;
+}
+.about_company:hover i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll 0px -144px;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    top:6px;
+}
+.about_company:active i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll 0px -144px;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    top:6px;
+}
+
+.price i {
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -28px -174px;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    top:10px;
+}
+.price:hover i {
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -28px -144px;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    top:10px;
+}
+.price:active i {
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -28px -144px;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    top:10px;
+}
+.license i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -55px -177px;
+    width: 23px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 26px;
+    position: relative;
+    top:10px;
+}
+.license:hover i{
+     display: inline-block;
+     background: url("../img/sprite.png") no-repeat scroll -55px -145px;
+     width: 23px;
+     height: 30px;
+     margin-left: 2px;
+     margin-right: 26px;
+     position: relative;
+     top:10px;
+ }
+.license:active i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -55px -145px;
+    width: 23px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 26px;
+    position: relative;
+    top:10px;
+}
+
+
+.recommendations i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -78px -174px;
+    width: 32px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:13px;
+    left: -5px;
+}
+
+.recommendations:hover i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -78px -144px;
+    width: 32px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:13px;
+    left: -5px;
+}
+
+.suppliers i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -110px -175px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:15px;
+    left: -4px;
+}
+
+.suppliers:hover i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -110px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:15px;
+    left: -4px;
+}
+.suppliers:active i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -110px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:15px;
+    left: -4px;
+}
+
+.work_44 i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -140px -175px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:14px;
+    left: -4px;
+}
+.work_44:hover i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -140px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:14px;
+    left: -4px;
+}
+.work_44:active i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -140px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:14px;
+    left: -4px;
+}
+.vacancy i{
+     display: inline-block;
+     background: url("../img/sprite.png") no-repeat scroll -170px -175px;
+     width: 30px;
+     height: 30px;
+     margin-left: 2px;
+     margin-right: 18px;
+     position: relative;
+     top:10px;
+     left: -4px;
+}
+.vacancy:hover i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -170px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:10px;
+    left: -4px;
+}
+.vacancy:active i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -170px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:10px;
+    left: -4px;
+}
+.contacts_nav i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -198px -175px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:15px;
+    left: -4px;
+}
+.contacts_nav:active i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -198px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:15px;
+    left: -4px;
+}
+.contacts_nav:hover i{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat scroll -198px -145px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 18px;
+    position: relative;
+    top:15px;
+    left: -4px;
+}
+/* ==========================================================================
+   2.1 sidebar end
+   ========================================================================== */
+
+
+.content{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 52px;
+    width: 693px;;
+    position: relative;
+}
+.content li{
+	font-family: 'PT_Sans';
+}
+.content a{
+	font-family: 'PT_Sans';
+	color: #3ca1cd;
+	font-size: 16px;
+}
+.content p{
+	font-family: 'PT_Sans';
+	color: #333333;
+	font-size: 16px;
+}
+
+
+/* ==========================================================================
+   2.2 About
+   ========================================================================== */
+
+.about{
+    margin-bottom: 100px;
+    width: 630px;
+}
+
+.about p,.about a, .about li{
+    font-family: "Lato_regular" !important;
+    color: #333333;
+}
+.about p{
+    margin-bottom: 13px;
+}
+.about  a{
+    text-decoration: none;
+    border-bottom: 1px solid #333333;
+}
+.about img{
+    margin-left: 6px;
+}
+.about li{
+    font-size: 16px;
+    list-style-type:none;
+    padding-bottom: 5px;
+}
+.tools_ikon{
+    background: url("../img/sprite.png") repeat scroll 173px 136px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    width: 19px;
+    margin-right: 10px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+.tools_text, .cctv_text, .extinguisher_text, .welding_text{
+    width: 600px;
+    display: inline-block;
+    /*margin-bottom: 3px;*/
+}
+.cctv_ikon{
+    background: url("../img/sprite.png") repeat scroll 154px 136px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    width: 22px;
+    margin-right: 8px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+.extinguisher_ikon{
+    background: url("../img/sprite.png") repeat scroll 126px 133px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    width: 22px;
+    margin-right: 8px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+.welding_ikon{
+    background: url("../img/sprite.png") repeat scroll 104px 133px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    width: 22px;
+    margin-right: 8px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+.lan_img {
+	float:right;
+}
+.pluses{
+	font-weight: 700;
+	text-decoration: none !important;
+}
+.about_list li>i{
+    background: url("../img/sprite.png") repeat scroll 84px 133px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    width: 22px;
+    margin-right: 8px;
+    margin-left: 10px;
+    margin-top: 4px;
+    vertical-align: top;
+}
+.about_list li:last-child{
+    margin-bottom: 7px;
+}
+
+/* ==========================================================================
+   2.2 About END
+   ========================================================================== */
+/* ==========================================================================
+   2.3 Montage
+   ========================================================================== */
+.montage{
+    width: 620px;
+}
+.montage p, .montage a, .montage li, .montage strong{
+    font-family: 'PT Sans', sans-serif;
+}
+.montage span{
+    color: #219fd1;
+}
+.montage p{
+    line-height: 25px;
+    margin-bottom: 13px;
+}
+.montage ol{
+    margin-left: 20px;
+}
+.montage ul>li{
+    list-style-type:none;
+}
+.montage li{
+
+    font-size: 16px;
+    color: #333333;;
+    line-height: 30px;
+}
+.montage ol li:last-child{
+    margin-bottom: 12px;
+}
+.montage ul li:last-child{
+    margin-bottom: 50px;
+}
+/* ==========================================================================
+   2.3 Montage - end
+   ========================================================================== */
+
+
+/* ==========================================================================
+   2.4 Partners
+   ========================================================================== */
+
+.img_logo{
+    display: inline-block;
+    margin-right: 33px;
+    margin-bottom: 32px;
+    vertical-align: top;
+}
+.img_logo_last{
+    margin-bottom: 110px;
+    display: inline-block;
+    margin-right: 33px;
+    margin-bottom: 115px;
+    vertical-align: top;
+}
+
+/* ==========================================================================
+   2.4 Partners - end
+   ========================================================================== */
+
+
+/* ==========================================================================
+   2. BODY END
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   3. FOOTER
+   ========================================================================== */
+
+.contact_info{
+	text-align: center;
+    width: 960px;
+    background-color: #444444;
+    margin:0 auto;
+    margin-bottom: 54px;
+    position: relative;
+    box-shadow: 0px -2px 8px 0px rgba(50, 50, 50, 0.82);
+}
+.contact_info div{
+	display: inline-block;
+}
+.contact_info p, .contact_info a{
+	color:white;
+  	font-size: 14px;
+}
+.contact_info a{
+    text-decoration: none;
+}
+.contact_info:after{
+    content: "";
+    background: url("../img/footer_left_2.png") no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 141px;
+    position:absolute;
+    left: -50px;
+    top: -32px;
+}
+.contact_info:before{
+    content: "";
+    background: url("../img/footer_right_2.png") no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 141px;
+    position:absolute;
+    left: 960px;
+    top: -32px;
+}
+.e-mail{
+	margin-left: 14px;
+	margin-right: 110px;
+	padding-bottom: 25px;
+    padding-top: 20px;
+    text-align: left;
+}
+.e-mail i{
+	background: url("../img/sprite.png") repeat scroll -28px 134px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    width: 19px;
+    margin-right: 6px;
+}
+.address{
+	text-align: center;
+	margin-right: 95px;
+}
+.tel_number_footer{
+	text-align: right;
+    margin-right: 11px;
+}
+.img_map{
+	height: 225px;
+	margin:0px;
+	padding:0px;
+	width: 960px;
+    box-shadow: 0px 28px 25px 0px rgba(50, 50, 50, 1);
+}
+.grey_line_footer{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #333333;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-bottom: 3px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+
+.online_inquiry_window{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #219fd1;
+    width: 500px;
+    padding: 14px 15px 10px 15px;
+}
+#name, #e-mail{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #219fd1;
+    display: inline-block;
+    border: 1px solid white;
+    width: 220px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 6px 0px 6px 11px;
+}
+#name{
+    margin-right: 28px;
+    margin-bottom: 15px;
+}
+/*#name:active{
+    border:1px solid white;
+}
+#name:hover{
+    border:1px solid white;
+}*/
+#comment-field{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    border:none;
+    width: 470px;
+    height: 188px;
+    color: #656363;
+    font-size: 15px;
+    margin-bottom: 13px;
+    padding-left:13px;
+    padding-top: 10px;
+}
+#button_send{
+    background-color: #136a8d;
+    border:none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 50px;
+    margin-left: 292px;
+    cursor: pointer;
+    }
+
+
+#mySite2{
+    padding: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
